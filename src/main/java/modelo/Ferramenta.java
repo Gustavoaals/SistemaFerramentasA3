@@ -65,4 +65,13 @@ public boolean insertFerramentaBD(String nome, String marca, float custo) {
         FerramentaDao.minhaLista.set(indice, objeto);
         return true;
     }
+ private int procuraIndice(int id_ferramenta) {
+        int indice = -1;
+        for (int i = 0; i < FerramentaDao.minhaLista.size(); i++) {
+            if (FerramentaDao.minhaLista.get(i).getId_ferramenta() == id_ferramenta) {
+                indice = i;
+            }
+        }
+        return indice;
+    }
 
