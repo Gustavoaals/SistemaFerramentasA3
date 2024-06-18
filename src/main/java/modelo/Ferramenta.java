@@ -21,3 +21,9 @@ public int getId_ferramenta() {
     public void setId_ferramenta(int id_ferramenta) {
         this.id_ferramenta = id_ferramenta;
     }
+ public String getNome() {
+    return nome;
+}
+    public void setNome(String nome) {
+    this.nome = nome;
+}
