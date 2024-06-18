@@ -59,3 +59,10 @@ public boolean insertFerramentaBD(String nome, String marca, float custo) {
         FerramentaDao.minhaLista.remove(indice);
         return true;
     }
+  public boolean updateFerramentaBD (int id_ferramenta, String nome, String marca, float custo) {
+        Ferramenta objeto = new Ferramenta(id_ferramenta, nome, marca, custo);
+        int indice = this.procuraIndice(id_ferramenta);
+        FerramentaDao.minhaLista.set(indice, objeto);
+        return true;
+    }
+
