@@ -39,3 +39,12 @@ public String getMarca(){
     public void setCusto(float custo) {
         this.custo = custo;
     }
+ @Override
+    public String toString() {
+        return "Ferramenta [id=" + id_ferramenta + ", nome=" + nome + ", marca="+ marca + ", custo=" + custo + "]";
+    }
+   
+    // Método para obter a lista de ferramentas do DAO
+    public ArrayList<Ferramenta> getMinhaLista() {
+        return FerramentaDao.getMinhaLista();
+    }
