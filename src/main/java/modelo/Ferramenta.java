@@ -33,3 +33,9 @@ public String getMarca(){
     public void setMarca(String marca){
         this.marca = marca;
     }
+ public float getCusto() {
+        return custo;
+    }
+    public void setCusto(float custo) {
+        this.custo = custo;
+    }
