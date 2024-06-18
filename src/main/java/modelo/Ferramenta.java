@@ -9,3 +9,9 @@ public class Ferramenta{
     private String marca;
     private float custo;
 }
+ public Ferramenta(int id_ferramenta, String nome, String marca, float custo) {
+        this.id_ferramenta = id_ferramenta;
+        this.nome = nome;
+        this.custo = custo;
+        this.marca = marca;
+}
