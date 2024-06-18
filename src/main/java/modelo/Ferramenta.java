@@ -15,3 +15,9 @@ public class Ferramenta{
         this.custo = custo;
         this.marca = marca;
 }
+public int getId_ferramenta() {
+        return id_ferramenta;
+    }
+    public void setId_ferramenta(int id_ferramenta) {
+        this.id_ferramenta = id_ferramenta;
+    }
