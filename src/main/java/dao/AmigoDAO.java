@@ -2,7 +2,6 @@
 package dao;
 
 public class AmigoDAO {
-    package dao;
 
 import java.util.ArrayList;
 import modelo.Amigo;
