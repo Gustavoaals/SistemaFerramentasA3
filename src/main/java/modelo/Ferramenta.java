@@ -74,4 +74,13 @@ public boolean insertFerramentaBD(String nome, String marca, float custo) {
         }
         return indice;
     }
+  public Ferramenta carregaFerramenta(int id_ferramenta) {
+        int indice = this.procuraIndice(id_ferramenta);
+        return FerramentaDao.minhaLista.get(indice);
+    }
+
+    public int maiorID() {
+        return FerramentaDao.maiorID();
+    }
+
 
