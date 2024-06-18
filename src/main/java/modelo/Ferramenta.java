@@ -44,7 +44,7 @@ public String getMarca(){
         return "Ferramenta [id=" + id_ferramenta + ", nome=" + nome + ", marca="+ marca + ", custo=" + custo + "]";
     }
    
-    // Método para obter a lista de ferramentas do DAO
+ 
     public ArrayList<Ferramenta> getMinhaLista() {
         return FerramentaDao.getMinhaLista();
     }
