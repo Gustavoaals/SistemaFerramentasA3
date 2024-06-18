@@ -48,3 +48,9 @@ public String getMarca(){
     public ArrayList<Ferramenta> getMinhaLista() {
         return FerramentaDao.getMinhaLista();
     }
+public boolean insertFerramentaBD(String nome, String marca, float custo) {
+        int id_ferramenta = this.maiorID() + 1;
+        Ferramenta objeto = new Ferramenta(id_ferramenta, nome, marca, custo);
+        FerramentaDao.minhaLista.add(objeto);
+        return true;
+    }
