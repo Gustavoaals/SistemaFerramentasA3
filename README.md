@@ -1,2 +1,2 @@
 # SistemaFerramentasA3
-Projeto de um software para gerenciamento de aquisições
+Projeto de software para controle de empréstimo de ferramentas, desenvolvido como parte do trabalho A3 dos aluno da UNISUL. 
