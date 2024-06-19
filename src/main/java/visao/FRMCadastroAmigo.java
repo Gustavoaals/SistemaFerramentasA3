@@ -8,17 +8,6 @@ import javax.swing.JTextField;
  * @author Gustavo
  */
 public class FRMCadastroAmigo extends javax.swing.JFrame {
-
-    private JLabel jLNome;
-    private JLabel jLTelefone;
-    private JLabel jLId;
-    private JTextField jTFNome;
-    private JTextField jTFTelefone;
-    private JTextField jTFId;
-    private JButton jBCadastrar;
-    private JButton jBGerenciamento;
-    private JButton jBVoltar;
-
     /**
      * Creates new form FRMCadastroAmigo
      */
@@ -143,18 +132,17 @@ public class FRMCadastroAmigo extends javax.swing.JFrame {
                             .addComponent(jLId)
                             .addComponent(jTFTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jBCadastrar)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jBGerenciamento)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jBVoltar))
-                                .addComponent(jTFId, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jBCadastrar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jBGerenciamento)
+                                .addGap(18, 18, 18)
+                                .addComponent(jBVoltar))
+                            .addComponent(jTFId, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(140, 140, 140)
                         .addComponent(jLabel4)))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
