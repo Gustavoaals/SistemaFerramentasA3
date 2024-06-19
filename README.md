@@ -24,7 +24,7 @@ José Gustavo de Almeida Alves (Gustavoaals 10724114382)
 - RF07 - Relatório de todos os empréstimos: O software deve gerar um relatório com todos os empréstimos realizados, informando a ferramenta emprestada, o amigo que pegou emprestado, a data de empréstimo e os dados de devolução e qual amigo faz mais empréstimos.
 - RF08 - Verificação de ferramentas não devolvidas: O software deve verificar a cada novo empréstimo se o amigo ainda tem ferramentas não devolvidas e informar ao usuário.
 ## Requisitos Não Funcionais
-RNF001: O programa deve ser executado em um sistema operacional compatível, como Windows 10.
-RNF002: O programa deve ser desenvolvido utilizando Java na versão 22.0.1.
-RNF003: O programa deve ser conectado a uma base de dados MySQL na versão 8.4.0.
-RNF004: O ambiente de desenvolvimento deve ser o Apache NetBeans IDE na versão 21.
+- RNF001: O programa deve ser executado em um sistema operacional compatível, como Windows 10.
+- RNF002: O programa deve ser desenvolvido utilizando Java na versão 22.0.1.
+- RNF003: O programa deve ser conectado a uma base de dados MySQL na versão 8.4.0.
+- RNF004: O ambiente de desenvolvimento deve ser o Apache NetBeans IDE na versão 21.
