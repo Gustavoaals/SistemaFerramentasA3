@@ -34,3 +34,7 @@ José Gustavo de Almeida Alves (Gustavoaals 10724114382)
  ![Captura de Tela (99)](https://github.com/Gustavoaals/SistemaFerramentasA3/assets/160749842/27195e32-3c13-4585-be50-113b9ea51f61)
 
 ## 📷 Telas
+![telaInicio](https://github.com/Gustavoaals/SistemaFerramentasA3/assets/160749842/f2aef49c-21d3-4f29-aa33-29b319b6716c)
+![CADASTROaMIGO](https://github.com/Gustavoaals/SistemaFerramentasA3/assets/160749842/95d05ea6-5c08-418c-8530-2c4aec4a2ba3)
+![CADASTROferramenta](https://github.com/Gustavoaals/SistemaFerramentasA3/assets/160749842/d35ba238-56a9-4d28-b14c-cf354ea96ac4)
+![gerenciamentoDeAmigo](https://github.com/Gustavoaals/SistemaFerramentasA3/assets/160749842/565d5d2c-efff-4888-bcde-32b98760bc8b)
