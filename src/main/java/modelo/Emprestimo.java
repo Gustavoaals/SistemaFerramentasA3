@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Objects;
 
 
+
 public class Emprestimo {
     private int id;
     private Amigo amigo;
@@ -79,3 +80,10 @@ public class Emprestimo {
         }
         this.dataFim = dataFim;
     }
+     @Override
+    public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        return "Emprestimo [id=" + id + ", amigo=" + amigo.getNome() + ", ferramenta=" + ferramenta.getNome() + 
+               ", dataInicio=" + sdf.format(dataInicio) + ", dataFim=" + sdf.format(dataFim) + "]";
+    }
+}
