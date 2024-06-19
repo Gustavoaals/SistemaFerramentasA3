@@ -43,7 +43,7 @@ public class FRMCadastroAmigo extends javax.swing.JFrame {
 
         jLabel2.setText("Telefone");
 
-        jLId.setText("Id:");
+        jLId.setText("Id");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setText("Cadastro de Amigo");
