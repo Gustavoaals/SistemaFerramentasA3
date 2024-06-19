@@ -20,15 +20,17 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSlider1 = new javax.swing.JSlider();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTabelaRelatorioAtivo = new javax.swing.JTable();
-        jBVoltar = new javax.swing.JButton();
+        jTableferramentas = new javax.swing.JTable();
+        jBCalcular = new javax.swing.JButton();
+        jBCancelar = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jBConfirmar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Empréstimos Ativos");
 
-        jTabelaRelatorioAtivo.setModel(new javax.swing.table.DefaultTableModel(
+        jTableferramentas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -36,50 +38,70 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Id", "Nome", "Marca ", "Custo", "Disponível"
+                "Id", "Nome", "Marca", "Custo", "Data do Empréstimo"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, true, true, false, true
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Float.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
         });
-        jScrollPane1.setViewportView(jTabelaRelatorioAtivo);
+        jScrollPane1.setViewportView(jTableferramentas);
 
-        jBVoltar.setText("Voltar");
-        jBVoltar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBVoltarActionPerformed(evt);
-            }
-        });
+        jBCalcular.setText("Calcular");
+
+        jBCancelar.setText("Cancelar");
+
+        jButton3.setText("Atualizar");
+
+        jBConfirmar.setText("Confirmar");
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setText("Relatorio de Ferramentas");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(172, 172, 172)
-                .addComponent(jBVoltar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jBCalcular, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(139, 139, 139)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jBCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBConfirmar))
+                .addGap(144, 144, 144))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(189, 189, 189)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 577, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                .addComponent(jBVoltar)
-                .addGap(23, 23, 23))
+                .addGap(26, 26, 26)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBCalcular)
+                    .addComponent(jBCancelar))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton3)
+                    .addComponent(jBConfirmar))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
@@ -126,9 +148,12 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBVoltar;
+    private javax.swing.JButton jBCalcular;
+    private javax.swing.JButton jBCancelar;
+    private javax.swing.JButton jBConfirmar;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSlider jSlider1;
-    private javax.swing.JTable jTabelaRelatorioAtivo;
+    private javax.swing.JTable jTableferramentas;
     // End of variables declaration//GEN-END:variables
 }

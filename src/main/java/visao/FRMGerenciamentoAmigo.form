@@ -26,52 +26,71 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLIdempréstimo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jBConfirmar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jBCancelar" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jScrollPane1" pref="463" max="32767" attributes="0"/>
-                              <Component id="jTFDataDevolução" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jLDatadeDevoluçã" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTFIdEmpréstimo" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLNovoTelefone" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLNovoNome" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLId" min="-2" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" max="32767" attributes="0"/>
+                              <Component id="jTFId" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jTFNovoNome" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jTFNovoTelefone" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
-                      <Component id="jBConfirmar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBCancelar" min="-2" max="-2" attributes="0"/>
-                  </Group>
               </Group>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace pref="52" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="131" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jLIdempréstimo" min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="123" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Component id="jLId" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTFIdEmpréstimo" min="-2" max="-2" attributes="0"/>
+              <Component id="jTFId" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLDatadeDevoluçã" min="-2" max="-2" attributes="0"/>
+              <Component id="jLNovoNome" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTFDataDevolução" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="35" max="32767" attributes="0"/>
+              <Component id="jTFNovoNome" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLNovoTelefone" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTFNovoTelefone" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Gerenciamento de Amigo"/>
+      </Properties>
+    </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -79,29 +98,17 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="jTable1">
+        <Component class="javax.swing.JTable" name="jTabela">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="5" rowCount="4">
+              <Table columnCount="3" rowCount="4">
                 <Column editable="true" title="Id" type="java.lang.Object"/>
-                <Column editable="true" title="Ferramenta" type="java.lang.Object"/>
-                <Column editable="true" title="Amigo" type="java.lang.Object"/>
-                <Column editable="true" title="Empr&#xe9;stimo" type="java.lang.Object"/>
-                <Column editable="true" title="Devolu&#xe7;&#xe3;o" type="java.lang.Object"/>
+                <Column editable="true" title="Nome" type="java.lang.Object"/>
+                <Column editable="true" title="Telefone" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
@@ -123,40 +130,38 @@
               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="jTable1AncestorAdded"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLIdempr&#xe9;stimo">
+    <Component class="javax.swing.JLabel" name="jLId">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Id do Emprestimo:"/>
+        <Property name="text" type="java.lang.String" value="Id:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTFIdEmpr&#xe9;stimo">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFIdEmpr&#xe9;stimoActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JTextField" name="jTFId">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTFDataDevolu&#xe7;&#xe3;o">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLDatadeDevolu&#xe7;&#xe3;">
+    <Component class="javax.swing.JLabel" name="jLNovoNome">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Data da Devoli&#xe7;&#xe3;o:"/>
+        <Property name="text" type="java.lang.String" value="Nome:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTFNovoNome">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLNovoTelefone">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Telefone"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTFNovoTelefone">
+    </Component>
+    <Component class="javax.swing.JButton" name="jBCancelar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jBConfirmar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Confirmar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBConfirmarActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBCancelar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
     </Component>
   </SubComponents>

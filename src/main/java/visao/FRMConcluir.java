@@ -8,12 +8,12 @@ package visao;
  *
  * @author Gustavo
  */
-public class FRMConclucao extends javax.swing.JFrame {
+public class FRMConcluir extends javax.swing.JFrame {
 
     /**
      * Creates new form FRMConclucao
      */
-    public FRMConclucao() {
+    public FRMConcluir() {
         initComponents();
     }
 
@@ -31,9 +31,10 @@ public class FRMConclucao extends javax.swing.JFrame {
         jLIdempréstimo = new javax.swing.JLabel();
         jTFIdEmpréstimo = new javax.swing.JTextField();
         jTFDataDevolução = new javax.swing.JTextField();
-        jLDatadeDevoluçã = new javax.swing.JLabel();
+        jLDatadeDevolução = new javax.swing.JLabel();
         jBConfirmar = new javax.swing.JButton();
-        jBCancelar = new javax.swing.JButton();
+        jBCanc = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,7 +68,7 @@ public class FRMConclucao extends javax.swing.JFrame {
             }
         });
 
-        jLDatadeDevoluçã.setText("Data da Devolição:");
+        jLDatadeDevolução.setText("Data da Devolução:");
 
         jBConfirmar.setText("Confirmar");
         jBConfirmar.addActionListener(new java.awt.event.ActionListener() {
@@ -76,33 +77,40 @@ public class FRMConclucao extends javax.swing.JFrame {
             }
         });
 
-        jBCancelar.setText("Cancelar");
+        jBCanc.setText("Cancelar");
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setText("Conclusão do Empréstimo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap(32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLIdempréstimo)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jScrollPane1)
+                        .addComponent(jTFDataDevolução)
+                        .addComponent(jLDatadeDevolução)
+                        .addComponent(jTFIdEmpréstimo, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLIdempréstimo)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 463, Short.MAX_VALUE)
-                                .addComponent(jTFDataDevolução)
-                                .addComponent(jLDatadeDevoluçã)
-                                .addComponent(jTFIdEmpréstimo))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(172, 172, 172)
+                        .addGap(131, 131, 131)
                         .addComponent(jBConfirmar)
                         .addGap(18, 18, 18)
-                        .addComponent(jBCancelar)))
-                .addContainerGap(24, Short.MAX_VALUE))
+                        .addComponent(jBCanc)))
+                .addGap(27, 27, 27))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(146, 146, 146)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -110,30 +118,32 @@ public class FRMConclucao extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTFIdEmpréstimo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLDatadeDevoluçã)
+                .addComponent(jLDatadeDevolução)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTFDataDevolução, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBConfirmar)
-                    .addComponent(jBCancelar))
-                .addGap(29, 29, 29))
+                    .addComponent(jBCanc))
+                .addGap(20, 20, 20))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+   
     private void jTFIdEmpréstimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFIdEmpréstimoActionPerformed
-        // TODO add your handling code here:
+    
+}
     }//GEN-LAST:event_jTFIdEmpréstimoActionPerformed
 
     private void jBConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBConfirmarActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jBConfirmarActionPerformed
 
     private void jTable1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jTable1AncestorAdded
         // TODO add your handling code here:
-         this.dispose();
+         this.equals(evt);
+
     }//GEN-LAST:event_jTable1AncestorAdded
 
     /**
@@ -191,16 +201,17 @@ try {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FRMConclucao().setVisible(true);
+                new FRMConcluir().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBCancelar;
+    private javax.swing.JButton jBCanc;
     private javax.swing.JButton jBConfirmar;
-    private javax.swing.JLabel jLDatadeDevoluçã;
+    private javax.swing.JLabel jLDatadeDevolução;
     private javax.swing.JLabel jLIdempréstimo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTFDataDevolução;
     private javax.swing.JTextField jTFIdEmpréstimo;
